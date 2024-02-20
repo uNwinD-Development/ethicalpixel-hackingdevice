@@ -26,7 +26,7 @@ local function hackingdevice(callback, type, time, mirrored)
     end
 end
 
-local psUI = {
+local hacking = {
     "numeric",
     "alphabet",
     "alphanumeric",
@@ -42,7 +42,7 @@ RegisterCommand('ethicalhacktest', function()
         else
             print("fail")
         end
-    end, psUI[math.random(1, #psUI)], 30, 0) -- Type (alphabet, numeric, alphanumeric, greek, braille, runes), Time (Seconds), Mirrored (0: Normal, 1: Normal + Mirrored 2: Mirrored only )
+    end, hacking[math.random(1, #hacking)], 30, 0) -- Type (alphabet, numeric, alphanumeric, greek, braille, runes), Time (Seconds), Mirrored (0: Normal, 1: Normal + Mirrored 2: Mirrored only )
 end)
 
 exports("hackingdevice", hackingdevice)
